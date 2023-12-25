@@ -1,0 +1,263 @@
+.primary-image-placeholder-1 {
+  position: absolute;
+  top: calc(50% - 540px);
+  left: calc(50% - 540px);
+  width: 1080px;
+  height: 1080px;
+  object-fit: cover;
+}
+.logo-placeholder-1 {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: -2px;
+  left: -5px;
+  /* object-fit: cover; */
+}
+.logo-group {
+  position: absolute;
+  height: 13.89%;
+  width: 13.89%;
+  top: 3.52%; /* Adjust top value if needed */
+  right: 81.11%; 
+  bottom: 82.59%; /* Adjust bottom value if needed */
+  left: 5%; /* Adjust left value if needed */
+  z-index: 1; /* Ensure the logo is displayed above other elements if necessary */
+  display: block !important;
+}
+
+
+
+.ad-example-9-child,
+.ad-example-9-item {
+  position: absolute;
+  background-color: var(--color-blueviolet);
+}
+.ad-example-9-child {
+  height: 11.39%;
+  width: 31.39%;
+  top: 64.35%;
+  right: 64.81%;
+  bottom: 24.26%;
+  left: 3.8%;
+}
+.ad-example-9-item {
+  top: 821px;
+  left: 41px;
+  width: 494px;
+  height: 123px;
+}
+.headline,
+.punchline,
+.callToAction {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  width: 1000px;
+  color: red;
+  font-size: 75px;
+  margin-top: 5px;
+}
+
+.punchline {
+  font-size: 50px;
+}
+.call-to-action-group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff006b;
+  width: 319px;
+  height: 86px;
+}
+.call-to-action {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  font-weight: 500;
+  display: inline-block;
+  width: 279px;
+}
+.call-to-action-group {
+  position: relative;
+  width: 319px;
+  height: 86px;
+  font-size: 40px;
+}
+.headline-parent {
+  position: absolute;
+  height: 29.91%;
+  width: 89.21%;
+  top: 66.48%;
+  right: 5.79%;
+  bottom: 3.61%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.ad-example-9 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  /* overflow: hidden; */
+  text-align: left;
+  font-size: 72px;
+  color: var(--color-white);
+  font-family: var(--font-roboto-condensed);
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Set the max width of the images container */
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the top position of the logo */
+  left: 30px; /* Adjust the left position of the logo */
+  width: 50px; /* Set the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.text-background{
+  display: inline-block; /* Display as inline-block to wrap the text width */
+  background-color: #f0f0f0; /* Background color for the text width */
+  padding: 10px;
+}
+.ad-example-9 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1200px; /* Adjust the width to accommodate the entire content */
+  height: 1080px;
+  text-align: left;
+  font-size: 72px;
+  color: var(--color-white);
+  font-family: var(--font-roboto-condensed);
+}
+
+.primary-image-placeholder-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.logo-group {
+  position: absolute;
+  height: 13.89%;
+  width: 13.89%;
+  top: 3.52%;
+  right: 5%;
+  z-index: 1;
+}
+
+
+.headline-parent {
+  position: absolute;
+  height: 29.91%;
+  width: 89.21%;
+  top: 66.48%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+
+.text-container {
+  width: 100%;
+}
+
+.ad-example-9 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100vh;
+  height: 100vh;
+  text-align: left;
+  font-size: 72px;
+  color: var(--color-white);
+  font-family: var(--font-roboto-condensed);
+  overflow: hidden;
+}
+
+.primary-image-placeholder-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-group {
+  position: absolute;
+  height: 13.89%;
+  width: 13.89%;
+  top: 3.52%;
+  right: 6%;
+  z-index: 1;
+}
+
+.text-container {
+  width: 100%;
+}
+
+.ad-example-9-child,
+.ad-example-9-item {
+  position: absolute;
+  background-color: var(--color-blueviolet);
+}
+
+.headline-parent {
+  position: absolute;
+  height: 29.91%;
+  width: 89.21%;
+  top: 55.48%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.text-container {
+  width: 100%;
+}
+
+/* Wrap headline, subheadline, and callToAction in a parent div */
+.text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.headline,
+.punchline,
+.callToAction {
+  font-weight: 500;
+  display: inline-block;
+  width: 1000px;
+  font-size: 75px;
+  /* margin-top: 5px; */
+}
+
+.punchline {
+  font-size: 50px;
+}
+.callToAction{
+  font-size: 25px;
+  bottom: 25px;
+}

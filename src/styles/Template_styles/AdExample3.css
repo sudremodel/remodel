@@ -1,0 +1,111 @@
+.ad-example-3 {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1080px;
+    text-align: left;
+    font-size: 72px;
+    color: var(--color-white);
+    font-family: var(--font-roboto-condensed);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-group {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .logo-placeholder {
+    width: 150px;
+    height: 150px;
+    /* object-fit: cover; */
+  }
+  
+  .headline-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+  
+  .text-container3 {
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  bottom: 30px;
+  }
+  .headline-parent3 {
+    position: absolute;
+    height: 29.91%;
+    width: 89.21%;
+    top: 65.48%;
+    right: 5.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .headline3,
+  .subheadline3,
+  .callToAction3 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    color: red;
+    font-size: 75px;
+    margin-bottom: 10px;
+    bottom: 300px;
+  }
+  .subheadline3{
+    font-size: 50px;
+  }
+  .callToAction3{
+    font-size: 25px;
+  }
+  .text-background {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  .primary-image-placeholder-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+  }
+  .ad-example-3 {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100vh;
+    height: 100vh;
+    text-align: left;
+    font-size: 72px;
+    color: var(--color-white);
+    font-family: var(--font-roboto-condensed);
+    overflow: hidden;
+  }
+
+  .headline-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.headline3,
+.subheadline3 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  color: red;
+  margin-bottom: 10px;
+  bottom: 300px;
+}
