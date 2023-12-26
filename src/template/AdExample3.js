@@ -46,7 +46,7 @@ const AdExample3 = ({ formData }) => {
             templateName: 'Adtemplate3'
           };
            console.log(dataToSend)
-          axios.post('https://48c4-69-112-182-199.ngrok-free.app/api/templates', dataToSend)
+          axios.post('https://a68d-69-112-182-199.ngrok-free.app/api/templates', dataToSend)
             .then(response => {
               console.log('Data saved to the database:', response.data);
             })
