@@ -4,6 +4,7 @@ import "../styles/Template_styles/AdExample9.css";
 import { saveAs } from "file-saver";
 import '../styles/fonts.css';
 import html2canvas from 'html2canvas';
+import axios from 'axios';
 
 
 const AdExample9 = ({ formData }) => {
@@ -35,16 +36,24 @@ const AdExample9 = ({ formData }) => {
       html2canvas(adContainerRef.current).then((canvas) => {
         canvas.toBlob((blob) => {
           saveAs(blob, 'template.png');
+          const dataToSend = {
+            logo: logo,
+            headline: headline,
+            subheadline: subheadline,
+            image: formData.currentImageSrc,
+            templateName: 'Adtemplate9'
+          };
+           console.log(dataToSend)
+          axios.post('https://48c4-69-112-182-199.ngrok-free.app/api/templates', dataToSend)
+            .then(response => {
+              console.log('Data saved to the database:', response.data);
+            })
+            .catch(error => {
+              console.error('Error saving data to the database:', error);
+            });
         });
       });
     }
-//     await saveTemplateToServer({
-//       "logo": logo,
-// "headline": headline,
-// "subheadline": subheadline,
-// "image": formData.currentImageSrc,
-// "templateName": "AdTemplate3"
-//     });
   };
 
   return (

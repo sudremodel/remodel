@@ -4,6 +4,8 @@ import { saveAs } from "file-saver";
 import "../styles/Template_styles/AdExample3.css";
 import '../styles/fonts.css';
 import html2canvas from 'html2canvas';
+import axios from 'axios';
+
 
 const AdExample3 = ({ formData }) => {
   const { logo, currentImageSrc: image, headline, subheadline, callToAction,textBackgroundColor, textColor } = formData;
@@ -28,19 +30,34 @@ const AdExample3 = ({ formData }) => {
   const handleDownload = async () => {
     if (adContainerRef.current && imagesLoaded) {
       html2canvas(adContainerRef.current).then((canvas) => {
-        canvas.toBlob((blob) => {
+        canvas.toBlob(async (blob) => {
           saveAs(blob, 'template.png');
+          const base64Image = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(blob);
+            reader.onloadend = () => resolve(reader.result);
+          });
+         
+          const dataToSend = {
+            logo: logo,
+            headline: headline,
+            subheadline: subheadline,
+            image: formData.currentImageSrc,
+            templateName: 'Adtemplate3'
+          };
+           console.log(dataToSend)
+          axios.post('https://48c4-69-112-182-199.ngrok-free.app/api/templates', dataToSend)
+            .then(response => {
+              console.log('Data saved to the database:', response.data);
+            })
+            .catch(error => {
+              console.error('Error saving data to the database:', error);
+            });
         });
       });
     }
-//     await saveTemplateToServer({
-//       "logo": logo,
-// "headline": headline,
-// "subheadline": subheadline,
-// "image": formData.currentImageSrc,
-// "templateName": "AdTemplate3"
-//     });
   };
+  
   const styles = {
     fontFamily: "'CoreSansN65Bold', sans-serif",
   };
